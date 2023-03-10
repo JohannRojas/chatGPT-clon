@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react';
 
-export const Title = () => {
-    useEffect(() => {
-      console.log('render')
-    }, [])
-    
-    const [title, settitle] = useState('Clon de chat GPT')
+export const Title = ({ title }) => {
+
   return (
-    <>
-    <div className='flex justify-center align-middle text-8xl'>
-        {title}
-    </div>
-    <button className='' onClick={() => settitle('Nuevo titulo')}>
-            click
-        </button>
-    </>
+    <h1 className='font-sans text-3xl text-center text-light-purple '>
+      {title}
+    </h1>
   )
 }

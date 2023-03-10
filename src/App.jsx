@@ -1,9 +1,15 @@
-import { Title } from "./components/Title"
+import React from 'react';
+import { Input } from "./components/Input";
+
+import { Title } from "./components/Title";
 
 function App() {
-
+  
   return (
-    <Title></Title>
+    <>
+      <Title title={'jhann'}/>
+      <Input />
+    </>
   )
 }
 
