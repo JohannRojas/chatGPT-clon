@@ -4,7 +4,7 @@ export const Input = () => {
 
   return (
     <div>
-      <input type='text' />
+      <input className="border-solid border-black border-2" />
     </div>
   )
 }
